@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" 
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" 
+    crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
@@ -102,7 +109,7 @@
             <hr>
             <div class="section_main">
                 <div class="section_main2"> 
-                    <h3>Classical Guitar</h3>
+                    <h3>Classical Guitar and aoet guitarand other and more</h3>
                     <a href="#pop"> <div class="section_main_items" id="item1"> 
 
                     <!--<div class="section_main_items_circle "> -->
@@ -179,7 +186,7 @@
             
                 <div class="videos">
                     <h5> Matson Adams Classical piece<br></h5>
-                    <iframe class="video"  src="https://www.youtube.com/embed/xk4KC3vU1E4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="video"><a href="https://youtu.be/xk4KC3vU1E4" data-toggle="lightbox"><img src="./photos/Mat.jpg" target="_blank" class="video"></a></div> 
                 </div>
                 <div class="videos">
                     <h5> Matson Adams and Ronny Hawkins at Iredell Arts Council <br> Statesville 2019</h5>
@@ -251,5 +258,9 @@
    
 
     <script src="script.js"></script>
+   <script $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });></script>
 </body>
 </html>

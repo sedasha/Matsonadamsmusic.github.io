@@ -69,11 +69,13 @@ header{
     transition: 0.8s ease in;
     transition-property: transform;
     width: 50%;
+    padding-bottom: 20px;
     background-color: rgba(246,166,98, 0.8);
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     display: inline-block;
     position:absolute;
     right:0;
+    top: 47px;
     transform-origin: 100% 50%;
     transform: scaleX(0);
     
@@ -91,6 +93,7 @@ nav{
     position: sticky;
     top: 0;
     left: 0;
+    transition: all 0.3s ease 0s;
     /* background-color:var(--color); */
 }
 nav ul {
@@ -293,6 +296,7 @@ h1{
     line-height: 28px;
     color:#4d270681;
     width: 80%;
+    padding-bottom: 25px;
 }
 .bio_text span{
     text-indent: 30px;
@@ -353,7 +357,10 @@ h2{
     text-align: center;
     color: white;
     font-size: 30px;
+    
+   
 }
+
 #item1{
     background-image: url(./photos/guitars/classical2.1.jpg);
 }
@@ -386,9 +393,12 @@ h2{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    flex: 1 1 auto;
+   
 }
 .section_main_items:hover{
     border: 5px solid var(--color);
+    transition: all 0.3s ease 0s;
 }
 .after_checkid::after{
     content: '';
@@ -496,6 +506,7 @@ h3{
     width: 95%;
     height: 30vh;
     margin-top: 5px;
+    margin: 0 auto;
 }
 h5{
     padding-top: 20px;

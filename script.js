@@ -77,7 +77,7 @@ getAllSectionItems.forEach((elem,index,arr)=>{
 window.addEventListener("scroll", (e)=>{
     if (scrollY > 49){
         nav.style=`
-            background-color: rgba(246,166,98, 0.4);
+            background-color: rgba(246,166,98, 0.7);
             background-attachment: fixed;
             position:fixed;
             transition: 1s;

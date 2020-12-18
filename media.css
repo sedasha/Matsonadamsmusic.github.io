@@ -273,9 +273,10 @@
         align-items: center;
     }
     .bio_text{
-        line-height: 20px;
-        font-size: 0.75rem;
+        line-height: 22px;
+        font-size: 1.1rem;
         margin-bottom: 5px;
+        word-spacing: 2px;
     }
     .bio img{
         width: 100%;
@@ -306,8 +307,8 @@
     }
     .section_main_size_source_text{
         width: 100%;
-        font-size: 0.75rem;
-        line-height: 18px;
+        font-size: 1rem;
+        line-height: 20px;
         word-spacing: 9px;
         padding: 15px 0px;
     }
