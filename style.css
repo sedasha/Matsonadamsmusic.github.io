@@ -56,6 +56,7 @@ ul li a.active {
 }
 header{
     width: 100%;
+    height: 100vh;
     background-image: url(./photos/1.jpg);
     background-size: 102%;
     background-position-y: -70px;
@@ -68,16 +69,16 @@ header{
 .menu_bar{
     transition: 0.8s ease in;
     transition-property: transform;
-    width: 50%;
-    padding-bottom: 20px;
-    background-color: rgba(246,166,98, 0.8);
-    /* padding: 20px 0px; */
+    width: 70%;
+    padding-bottom: 30px;
+    background-color: rgba(246,166,98, 0.9);
     display: inline-block;
     position:absolute;
     right:0;
     top: 47px;
     transform-origin: 100% 50%;
     transform: scaleX(0);
+    z-index: 3000;
     
     
 }
@@ -85,16 +86,15 @@ header{
     flex-direction: column;
 }
 .menu_bar ul >li{
-    margin-top: 25px;
+    margin-top: 45px;
 }
 nav{
     width: 100%;
-    padding:25px 0;
-    position: sticky;
+    padding: 20px 0px;
+    position: fixed;
     top: 0;
     left: 0;
     transition: all 0.3s ease 0s;
-    /* background-color:var(--color); */
 }
 nav ul {
     list-style-type: none;
@@ -145,7 +145,7 @@ nav ul li:hover::after{
 }
 
 h1{
-    margin-top:40px;
+    margin-top:60px;
     font-size: 34px;
     letter-spacing: 5px;
     text-align: center;
@@ -347,7 +347,8 @@ h2{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;  
+    justify-content:space-between; 
+    /* flex: 1 1 auto;  */
 }
 .section_main2{
     width: 32.5%;
@@ -357,47 +358,28 @@ h2{
     text-align: center;
     color: white;
     font-size: 30px;
-    
-   
+    /* flex: 1 1 auto; */
 }
 
-#item1{
-    background-image: url(./photos/guitars/classical2.1.jpg);
-}
-#item2{
-    background-image: url(./photos/guitars/acoustic.jpg);
-}
-#item3{
-    background-image: url(./photos/guitars/electric.jpg);
-}
-#item4{
-    background-image: url(./photos/guitars/bass3.1.jpg);
-}
-#item5{
-    background-image: url(./photos/guitars/drums1.jpg);
-}
-#item6{
-    background-image: url(./photos/guitars/ukelele1.jpg);
+.item{
+    width: 100%;
 }
 .section_main_items{
     width: 100%;
     height: 40vh;
-    /* border: 2px solid var(--text-color) ; */
     display: flex; 
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center; 
     transition: 0.6s;
     cursor: pointer;
     overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex: 1 1 auto;
+    padding: 5px;
+
+  
    
 }
-.section_main_items:hover{
-    border: 5px solid var(--color);
+.section_main2:hover{
+    border: 7px solid white;
     transition: all 0.3s ease 0s;
 }
 .after_checkid::after{
@@ -409,14 +391,14 @@ h2{
     transform:rotate(45deg);
     top: 91%;
 }
-.section_main_items_circle{
+/* .section_main_items_circle{
     padding-top: 25px;
     border: 1px solid white;
     border-radius: 50%;
     display:flex;
     justify-content: center;
     align-items: center;
-}
+} */
 h3{
     font-size: 20px;
     margin-top: 10px;
@@ -492,10 +474,10 @@ h3{
     width: 31%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     background-color: white;
-    padding-bottom: 10px;
     margin-bottom: 20px;
+    padding: 10px;
+    padding-top: 0px;
 }
 .videos:hover{
    border: 5px solid var(--color);
@@ -503,16 +485,21 @@ h3{
    transform: scale(0.99);
 }
 .video{
-    width: 95%;
     height: 30vh;
-    margin-top: 5px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.videos img{
+    width: 85%;
 }
 h5{
     padding-top: 20px;
     font-size: 15px;
+    font-weight: 500;
     text-align: center;
     color: var(--text-color);
+    padding-bottom: 7px;
 }
 
 .photo{

@@ -67,6 +67,10 @@ getAllSectionItems.forEach((elem,index,arr)=>{
 });
 // courses click close
     getSectionClose.addEventListener("click",()=>{
+        getAllSectionItems.forEach((elem, ind, arr)=>{
+                elem.style=`
+                border: none;`
+            }) 
         getSectionSource.style=`
         display:none;
         transition:0.3s`;
@@ -77,12 +81,11 @@ getAllSectionItems.forEach((elem,index,arr)=>{
 window.addEventListener("scroll", (e)=>{
     if (scrollY > 49){
         nav.style=`
-            background-color: rgba(246,166,98, 0.7);
+            background-color: rgba(246,166,98, 0.85);
             background-attachment: fixed;
-            position:fixed;
             transition: 1s;
             z-index:1000;
-            padding: 10px;
+            padding: 15px 0px;
             `;
         }
         if(scrollY < 49){
